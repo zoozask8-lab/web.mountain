@@ -26,7 +26,7 @@ body{
 .ul-navigationbar{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 41px;
     list-style: none;
     align-items: center;
 }
