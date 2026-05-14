@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travelista Tours - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="big-container">
-        <header>
-            <div class="navigationbar">
-                <div class="logo-navigationbar">
-                    <img src="download.png" alt="" style="width: 130px;">
-                </div>
-                <div class="link-navigationbar">
-                    <ul class="ul-navigationbar">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <button class="button-navigationbar">CONTACT</button>
-                    </ul>
-                </div>
+    <div class="login-page">
+        <section class="hero-panel">
+            <div class="hero-overlay"></div>
+            <div class="hero-copy">
+                <span class="hero-pill">Travelista Tours</span>
+                <h1>Travel is the only purchase that enriches you in ways beyond material wealth</h1>
+                <p>Secure your next adventure with a fast and easy login experience.</p>
             </div>
-        </header>
-        <div class="body">
-            <section>
-                <h1>WELCOME TO THE MOUNTAIN</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam, quos ullam excepturi culpa perferendis nobis illo sit provident odit cumque ipsum illum aliquam quo eos voluptatibus, amet ipsam cupiditate.</p>
-                <button class="body-button">Get Starts</button>
-            </section>
-        </div>
+        </section>
+
+        <section class="auth-panel">
+            <div class="auth-card">
+                <div class="auth-head">
+                    <p class="eyebrow">Secure access</p>
+                    <h1>Welcome back</h1>
+                    <p>Login with your email to continue planning your next trip.</p>
+                </div>
+
+                <form class="auth-form" action="#" method="post">
+                    <label>
+                        <span>Email address</span>
+                        <input type="email" name="email" placeholder="you@email.com" required>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <div class="password-field">
+                            <input type="password" name="password" placeholder="Enter your password" required>
+                            <button class="password-toggle" type="button" aria-label="Toggle password visibility">👁</button>
+                        </div>
+                    </label>
+
+                    <div class="auth-actions">
+                        <a href="#forgot" class="link-secondary">Forgot your password?</a>
+                        <button type="submit" class="btn-primary">Login</button>
+                    </div>
+                </form>
+
+                <div class="divider"><span>Or continue with</span></div>
+
+                <div class="social-login">
+                    <button class="btn-social btn-google" aria-label="Login with Google"><span>G</span> Google</button>
+                    <button class="btn-social btn-facebook" aria-label="Login with Facebook"><span>f</span> Facebook</button>
+                    <button class="btn-social btn-apple" aria-label="Login with Apple"><span></span> Apple</button>
+                </div>
+
+                <p class="register-note">Don’t have an account? <a href="#register">Register now</a></p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
